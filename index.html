@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hills Photography</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="photo1.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1920/400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 1rem;
+        }
+
+        .photo-description {
+            padding: 1.5rem;
+            background: #f9f9f9;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .photo-details {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .photo-story {
+            margin-top: 1rem;
+            line-height: 1.6;
+        }
+
+        .about {
+            padding: 4rem 2rem;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #4CAF50;
+        }
+
+        .photo-container {
+            margin-bottom: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="https://harshvardhan5680.github.io/Gallery-/">Gallery</a></li>
+            <li><a href="https://harshvardhan5680.github.io/about-me/">About</a></li>
+           
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Hills Photography</h1>
+        <p>Capturing Nature's Majestic Beauty</p>
+    </header>
+
+    <section id="gallery" class="gallery">
+        <div class="photo-container">
+            <div class="gallery-item">
+                <img src="photo1.jpg" alt="Mountain Sunrise">
+                <div class="gallery-caption">
+                    <h3>Mountain Sunrise</h3>
+                    <p>Himalayas at Dawn</p>
+                </div>
+            </div>
+            <div class="photo-description">
+                <h3>The Awakening Peaks</h3>
+                <div class="photo-details">
+                    
+                    <p>📍 Location: Bhowali,uttarakhand</p>
+                    <p>🗓️ Captured: October 15, 2024</p>
+                </div>
+                <div class="photo-story">
+                    <p>This breathtaking shot was captured during a crisp autumn morning at Mount Everest Base Camp. After a three-hour hike in complete darkness, I set up my equipment just as the first rays of sunlight began to paint the sky. The interplay of light and shadow on the snow-capped peaks created a magical moment that seemed to last forever. The golden light slowly cascaded down the mountain face, revealing layers of ancient rock and glacial ice.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="gallery-item">
+                <img src="photo2.jpg" alt="Rolling Hills">
+                <div class="gallery-caption">
+                    <h3>Rolling Hills</h3>
+                    <p>Tuscany Countryside</p>
+                </div>
+            </div>
+            <div class="photo-description">
+                <h3>Waves of Green</h3>
+                <div class="photo-details">
+                    
+                    
+                    <p>📍jungle top hill</p>
+                    <p>🗓️ Captured: May 20, 2024</p>
+                </div>
+                <div class="photo-story">
+                    <p>Captured during the perfect spring evening in Tuscany's Val d'Orcia region, this image showcases the renowned rolling hills that have made this area a UNESCO World Heritage site. The late afternoon sun cast long shadows across the landscape, highlighting the gentle curves of the hills and the characteristic cypress trees. The fresh spring grass created a carpet of vibrant green, contrasting beautifully with the warm Italian sunlight.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="photo-container">
+            <div class="gallery-item">
+                <img src="photo3.jpg" alt="Forest Valley">
+                <div class="gallery-caption">
+                    <h3>Forest Valley</h3>
+                    <p>Alpine Mystery</p>
+                </div>
+            </div>
+            <div class="photo-description">
+                <h3>Valley of Dreams</h3>
+                <div class="photo-details">
+                    
+                    <p>📍 Location: mukteshwar uttarakhand</p>
+                    <p>🗓️ Captured: September 5, 2024</p>
+                </div>
+                <div class="photo-story">
+                    <p>This mystical scene emerged as the morning mist began to lift from the Lauterbrunnen Valley. The early morning fog created an ethereal atmosphere, with the ancient pine trees emerging like silent sentinels through the mist. The soft diffused light filtered through the clouds, creating a magical atmosphere that transformed the valley into something from a fairy tale. Waterfalls could be heard in the distance, their sound muffled by the thick morning air.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We specialize in capturing the breathtaking beauty of hills and mountains around the world. Our passion is to bring nature's grandeur to your screens and walls.</p>
+    </section>
+
+    <footer id="contact">
+        <h2>Connect With Us</h2>
+        <p>Follow us on social media for daily updates and beautiful captures</p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/harshvardhan-pandey-25a760328/"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/pandey_jii_04?igsh=MTNidzhtdXhvbTM1bg%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/harshvardhan-pandey-25a760328/"><i class="fab fa-twitter"></i></a>
+           
+        </div>
+        <p style="margin-top: 1rem;">Email: contact@hillsphotography.com</p>
+        
+    </footer>
+</body>
+</html>
